@@ -10,6 +10,7 @@
     <meta property="og:image" content="https://raw.githubusercontent.com/orrinrhodes/w98/refs/heads/main/imgs/crab.jpg">
     <meta property="og:url" content="w98.rhodes.vip">
     <meta name="theme-color" content="#c0c0a0">
+
 </head>
 <body>
 
@@ -19,10 +20,18 @@
             <span>My Computer</span>
         </div>
 
-    <div class="desktop-icon" data-title="Recycle Bin" data-img="https://win98icons.alexmeub.com/icons/png/recycle_bin_empty_2k-2.png">
-        <img src="https://win98icons.alexmeub.com/icons/png/recycle_bin_empty_2k-2.png">
-        <span>Recycle Bin</span>
-    </div>
+        <div class="desktop-icon" data-title="Recycle Bin" data-img="https://win98icons.alexmeub.com/icons/png/recycle_bin_empty_2k-2.png">
+            <img src="https://win98icons.alexmeub.com/icons/png/recycle_bin_empty_2k-2.png">
+            <span>Recycle Bin</span>
+        </div>
+
+        <model-viewer
+            class="desktop-icon"
+            src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb"
+            camera-controls
+            auto-rotate>
+        </model-viewer>
+
     </div>
 
     <div class="taskbar">
@@ -80,5 +89,8 @@
     <audio src="./sounds/Windows 98 startup.wav" id="startup-sound"></audio>
     <audio src="./sounds/Windows 98 default sound.wav" id="bsod-sound"></audio>
     <script src="index.js" defer></script>
+    <script type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+    </script>
 </body>
 </html>
