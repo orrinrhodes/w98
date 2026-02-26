@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W98</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="desktop">
+        <div class="desktop-icon" data-title="My Computer" data-img="https://win98icons.alexmeub.com/icons/png/computer-4.png">
+            <img src="https://win98icons.alexmeub.com/icons/png/computer-4.png">
+            <span>My Computer</span>
+        </div>
+
+    <div class="desktop-icon" data-title="Recycle Bin" data-img="https://win98icons.alexmeub.com/icons/png/recycle_bin_empty_2k-2.png">
+        <img src="https://win98icons.alexmeub.com/icons/png/recycle_bin_empty_2k-2.png">
+        <span>Recycle Bin</span>
+    </div>
+    </div>
+
+    <div class="taskbar">
+
+        <div id="start-menu" class="start-menu">
+            <div class="sidebar">
+                <strong>grain</strong> 98
+            </div>
+        <ul class="menu-items">
+            <li>
+                <img src="https://win98icons.alexmeub.com/icons/png/game_mine_1-0.png">
+                Games
+            </li>
+            <li>
+                <img src="https://win98icons.alexmeub.com/icons/png/chip_ramdrive-3.png">
+                Projects
+            </li>
+            <li data-title="Socials" data-img="https://win98icons.alexmeub.com/icons/png/users_green-4.png">
+                <img src="https://win98icons.alexmeub.com/icons/png/users_green-4.png">
+                Socials
+            </li>
+            <hr>
+            <li>
+                <img src="https://win98icons.alexmeub.com/icons/png/card_reader_not-0.png">
+                Shut Down D:
+            </li>
+        </ul>
+        </div>
+
+        <button class="w98-button" id="start-button">
+            <img src="https://win98icons.alexmeub.com/icons/png/windows-0.png" class="start-icon" alt="hi">
+            <strong>Start</strong>
+        </button>
+
+        <div id="app-tray"></div>
+
+        <div class="status-tray" id="clock">
+            12:00 PM
+        </div>
+
+    </div>
+
+    <div id="bsod" class="bsod">
+        <div class="bsod-content">
+            <div class="bsod-header">Womp womp...</div>
+            <p>A fatal exception 0E has occurred at 0028:C0011E36 in VXD VMM(01) + 00010E36. The current application will be terminated.</p>
+            <ul class="bsod-instructions">
+                <li>* Press any key to terminate the current application.</li>
+                <li>* Press CTRL+ALT+DEL again to restart your computer. You WILL lose any unsaved information in all applications.</li>
+            </ul>
+            <p class="press-any-key">Press any key to continue <span>_</span></p>
+        </div>
+    </div>
+
+    <audio src="./sounds/Windows 98 startup.wav" id="startup-sound"></audio>
+    <audio src="./sounds/Windows 98 default sound.wav" id="bsod-sound"></audio>
+    <script src="index.js" defer></script>
+</body>
+</html>
