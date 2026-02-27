@@ -196,8 +196,9 @@ document.querySelectorAll('.desktop-icon').forEach(icon => {
         if(title) {
             if(title === 'Frank') {
                 const content = dino(title);
-                createWindow(title, img, content);
             };
+            const content = placeholder(title)
+            createWindow(title, img, content);
         };
     });
 });
