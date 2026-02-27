@@ -179,7 +179,7 @@ const placeholder = (title) => `
 const dino = (title) => `
     <p>Welcome to ${title}... model viewer</p>
      <model-viewer
-                src="./models/tyrannosaurus_rex.glb"
+                src="https://raw.githubusercontent.com/orrinrhodes/w98/refs/heads/main/models/tyrannosaurus_rex.glb"
                 auto-rotate
                 autoplay
                 camera-orbit="0deg 75deg 3m"
