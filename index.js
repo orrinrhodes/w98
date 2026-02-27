@@ -193,11 +193,11 @@ document.querySelectorAll('.desktop-icon').forEach(icon => {
         const title = icon.getAttribute('data-title');
         const img = icon.getAttribute('data-img');
         
+        let content = placeholder(title)
         if(title) {
             if(title === 'Frank') {
-                const content = dino(title);
+                content = dino(title);
             };
-            const content = placeholder(title)
             createWindow(title, img, content);
         };
     });
