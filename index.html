@@ -25,12 +25,33 @@
             <span>Recycle Bin</span>
         </div>
 
-        <model-viewer
-            class="desktop-icon"
-            src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb"
-            camera-controls
-            auto-rotate>
-        </model-viewer>
+        <div class="desktop-icon" data-title="Frank" data-img="">
+            <model-viewer
+                class="desktop-icon"
+                src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb"
+                auto-rotate
+                auto-rotate-speed="180"
+                camera-target="0m 1.6m 0m"
+                field-of-view="10deg"
+                disable-zoom
+                disable-pan
+                disable-tap>
+            </model-viewer>
+            <script>
+                const viewer = document.querySelector("model-viewer");
+
+                let angle = 0;
+
+                function spin() {
+                    angle += 1.5;
+                    viewer.cameraOrbit = `${angle}deg 90deg 2.5m`;
+                    requestAnimationFrame(spin);
+                };
+
+                spin();
+            </script>
+            <span>Frank</span>
+        </div>
 
     </div>
 

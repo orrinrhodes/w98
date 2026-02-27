@@ -181,8 +181,10 @@ document.querySelectorAll('.desktop-icon').forEach(icon => {
         const title = icon.getAttribute('data-title');
         const img = icon.getAttribute('data-img');
         
-        const content = placeholder(title)
-        createWindow(title, img, content);
+        if(title) {
+            const content = placeholder(title)
+            createWindow(title, img, content);
+        };
     });
 });
 
